@@ -16,34 +16,34 @@ Both data frames were checked for any null values, along with each column’s da
 
 The "invoice_date" column was converted to a datetime data type and confirmed.
 
-# Determine which Region Sold the Most Products
+# Region that Sold the Most Products
 The groupby and pivot_table functions were used to create a multi-index DataFrame with the "region", "state", and "city" columns.
 
 The results were sorted in descending order to show the top five regions, including the state and city that have the greatest number of products sold. 
 
-# Determine which Region had the Most Sales
+# Region that had the Most Sales
 The groupby and pivot_table functions were used to create a multi-index DataFrame with the "region", "state", and "city" columns.
 
 The results were sorted in descending order to show the top five regions, including the state and city that generated the most sales. 
 
-# Determine which Retailer had the Most Sales
+# Retailer that had the Most Sales
 The groupby and pivot_table functions were used to create a multi-index DataFrame with the "retailer", "region", "state", and "city" columns.
 
 The results were sorted in descending order to show the top five retailers along with their region, state, and city that generated the most sales. 
 
-# Determine which Retailer Sold the Most Women's Athletic Footwear
+# Retailer that Sold the Most Women's Athletic Footwear
 The combined DataFrame was filtered to create a DataFrame with only women's athletic footwear sales data.
 
 The results were sorted in descending order to show the top five retailers along with their region, state, and city that sold the most women's athletic footwear. 
 
-# Determine the Day with the Most Women's Athletic Footwear Sales
+# Day with the Most Women's Athletic Footwear Sales
 A pivot table was created with the "invoice_date" column as the index and the "total_sales" column as the values parameter.
 
 The resample function was applied to the pivot table, placing the data into daily bins, to get the total sales for each day.
 
 Then the resampled DataFrame was sorted in descending order to show the top 10 days that generated the most women's athletic footwear sales. 
 
-# Determine the Week with the Most Women's Athletic Footwear Sales
+# Week with the Most Women's Athletic Footwear Sales
 The resample function was applied to the pivot table and placed into weekly bins, and get the total sales for each week.
 
 The resampled DataFrame was resorted in descending order to show the top 10 weeks that generated the most women's athletic footwear sales. 
